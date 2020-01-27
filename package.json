@@ -1,0 +1,26 @@
+{
+  "name": "server_week1",
+  "version": "1.0.0",
+  "description": "UCI server side week1 assignment",
+  "main": "index.js",
+  "scripts": {
+    "start": "node -r esm src/index.js",
+    "test": "mocha -r esm test/tests.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/knasongk/server_week1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/knasongk/server_week1/issues"
+  },
+  "homepage": "https://github.com/knasongk/server_week1#readme",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "esm": "^3.2.25",
+    "lint": "^0.7.0",
+    "mocha": "^7.0.1"
+  }
+}
