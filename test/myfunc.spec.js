@@ -7,9 +7,9 @@ describe('MyModule', () => {
 	   expect(myMult(2,3)).to.equal(6);
        });
    });
-   describe('myFunc (multiply) fail case', () => {
-       it('return 26 when given 4 and 5', () => {
-	   expect(myMult(4,5)).to.equal(26);
+   describe('myFunc (multiply) uphappy path', () => {
+       it('return NaN when given 4 and foo', () => {
+	   expect(myMult(4,'foo')).to.be.NaN;
        });
    });
 });
