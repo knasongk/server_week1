@@ -7,18 +7,12 @@ app.use(cors()); // for all routes
 var port = process.env.PORT || 8080;
 
 app.get('/foo', function(req, res) {
-	const {ip, method, url } = req;
+	const {bar, baz } = req.query;
 
-	console.log(method); // 'get'
-	console.log(ip); // eg. '127.0.0.1'
-	console.log(url); // eg. '/foo?bar=baz'
+	console.log(bar);
+	console.log(baz); 
 
-	var info =  {
-		'string_value': 'StackOverflow',
-		'number_value': 8476
-	}
-
-	res.json(info);
+	res.json({foo: [bar, baz] });
 
 	// or
 	/* res.send(JSON.stringify({
